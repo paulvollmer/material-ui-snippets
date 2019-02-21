@@ -1,0 +1,133 @@
+# coffeelint: disable=max_line_length
+'.source.js':
+  # "Material-UI AppBar":
+  #   'prefix': 'appbar'
+  #   'body': ''
+
+  "Material-UI Avatar":
+    'prefix': 'avatar'
+    'body': '<Avatar className={classes.avatar}>$1</Avatar>\n$2'
+
+  "Material-UI Badge":
+    'prefix': 'badge'
+    'body': """
+    <Badge className={classes.margin} badgeContent={4} color="primary">
+      <MailIcon />
+    </Badge>
+    $1
+    """
+
+  "Material-UI Button":
+    'prefix': 'button'
+    'body': """
+    <Button variant="outlined" color="primary" className={classes.button}>
+      $1
+    </Button>
+    $2
+    """
+
+  # "Material-UI Card":
+  #   'prefix': 'card'
+  #   'body': ''
+
+  "Material-UI Chip Basic":
+    'prefix': 'chip basic'
+    'body': '<Chip label="$1" className={classes.chip} />\n$2'
+  "Material-UI Chip Clickable":
+    'prefix': 'chip click'
+    'body': '<Chip label="$1" onClick={$2} className={classes.chip} />\n$3'
+
+  # "Material-UI Dialog":
+  #   'prefix': 'dialog'
+  #   'body': ''
+
+  # "Material-UI Divider":
+  #   'prefix': 'divider'
+  #   'body': ''
+
+  # "Material-UI Drawer":
+  #   'prefix': 'drawer'
+  #   'body': ''
+
+  # "Material-UI List":
+  #   'prefix': 'list'
+  #   'body': ''
+
+  # "Material-UI Menu":
+  #   'prefix': 'menu'
+  #   'body': ''
+
+  "Material-UI Paper":
+    'prefix': 'paper'
+    'body': """
+    <Paper className={classes.root} elevation={1}>
+      $1
+    </Paper>
+    $2
+    """
+
+  # "Material-UI Picker":
+  #   'prefix': 'picker'
+  #   'body': ''
+
+  # "Material-UI Progress":
+  #   'prefix': 'progress'
+  #   'body': ''
+
+  # "Material-UI Select":
+  #   'prefix': 'select'
+  #   'body': ''
+
+  # "Material-UI Snackbar":
+  #   'prefix': 'snackbar'
+  #   'body': ''
+
+  # "Material-UI Stepper":
+  #   'prefix': 'stepper'
+  #   'body': ''
+
+  "Material-UI Table":
+    'prefix': 'table'
+    'body': """
+    <Table className={classes.table}>
+      <TableHead>
+        <TableRow>
+          <TableCell>$1</TableCell>
+          <TableCell>$2</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {rows.map(row => (
+          <TableRow key={row.id}>
+            <TableCell component="th" scope="row">
+              {row.name}
+            </TableCell>
+            <TableCell>{row.$3}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+    $4
+    """
+
+  # "Material-UI Tab":
+  #   'prefix': 'tab'
+  #   'body': ''
+
+  "Material-UI TextField":
+    'prefix': 'textfield'
+    'body': """
+    <TextField
+      id="standard-name"
+      label="Name"
+      className={classes.textField}
+      value={this.state.name}
+      onChange={this.handleChange('name')}
+      margin="normal"
+    />
+    $1
+    """
+
+  "Material-UI Tooltip":
+    'prefix': 'tooltip'
+    'body': '<Tooltip title="Add" aria-label="Add">$1</Tooltip>$2'
