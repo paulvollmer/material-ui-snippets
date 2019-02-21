@@ -1,6 +1,6 @@
 {
   "name": "material-ui-snippets",
-  "version": "1.0.3",
+  "version": "3.9.2",
   "description": "Material-UI snippets for Atom",
   "keywords": [
     "javascript",
@@ -13,7 +13,7 @@
     "language-babel:grammar-used",
     "language-react:grammar-used"
   ],
-  "repository": "https://github.com/tomoya/material-ui-snippets",
+  "repository": "https://github.com/paulvollmer/material-ui-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
